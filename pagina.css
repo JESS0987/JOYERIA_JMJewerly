@@ -1,0 +1,149 @@
+{
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+p {font-size:1.25em;}
+.color-acento{color:rgb(54, 175, 54);}
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+
+
+body {
+    font-family: "roboto", sans-serif;
+    margin: 0%;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    background-color: rgb(230,230,230);
+}
+header .nombre{
+    margin: 0;
+    padding: 15px 3px;
+    font-weight: bold;
+    color:rgb(54, 175, 54);
+    font-size: 1.55em;
+}
+header .container{
+    
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+header nav{
+display: flex;
+flex-direction: column;
+text-align: center;
+padding-bottom: 25px;
+}
+header a{
+    padding: 3px;
+text-decoration: none;
+font-weight: bold;
+color: black;
+}
+header a:hover{
+    color: rgb(54, 175, 54);
+
+}
+#inicio{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+height: 70vh;
+color: white;
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url("fondo.jpg");
+background-repeat: repeat;
+background-size: cover;
+background-position: center center;
+}
+#quiensoy .container{    
+      text-align: center;
+    padding: 80px 12px;
+}
+footer p{
+    margin: 0;
+    color: 100,100,100;
+    padding: 12px;
+
+}
+footer{
+    background-color: rgba(230,230,230)
+}
+footer .container{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media (min-width:600px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+      
+   display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+  
+    .header nav{
+        display: flex;
+        flex-direction: row;
+        padding-bottom:  0;   
+        padding: 2px 4px;
+        padding-right: 20px;
+        
+    }
+   
+   
+
+    #quiensoy .container{
+
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #quiensoy .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #quiensoy .fotito{
+        background-image: url("imagenes/fotito.jpg");
+        background-size: cover;
+        background-position: center center;
+        width: 50% ;
+        height: 400px;
+
+    }
+}
